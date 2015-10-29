@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		162206881BE1476B00AA6631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162206871BE1476B00AA6631 /* AppDelegate.swift */; };
-		1622068A1BE1476B00AA6631 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162206891BE1476B00AA6631 /* ViewController.swift */; };
 		1622068D1BE1476B00AA6631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1622068B1BE1476B00AA6631 /* Main.storyboard */; };
 		1622068F1BE1476B00AA6631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1622068E1BE1476B00AA6631 /* Assets.xcassets */; };
 		162206921BE1476B00AA6631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162206901BE1476B00AA6631 /* LaunchScreen.storyboard */; };
 		1622069D1BE1476B00AA6631 /* iSquareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1622069C1BE1476B00AA6631 /* iSquareTests.swift */; };
 		162206A81BE1476B00AA6631 /* iSquareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162206A71BE1476B00AA6631 /* iSquareUITests.swift */; };
+		162206BA1BE14A1500AA6631 /* ImageCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162206B91BE14A1500AA6631 /* ImageCropper.swift */; settings = {ASSET_TAGS = (); }; };
+		162206BC1BE14EE100AA6631 /* URLCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162206BB1BE14EE100AA6631 /* URLCache.swift */; settings = {ASSET_TAGS = (); }; };
+		162206BE1BE1525300AA6631 /* iSquareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162206BD1BE1525300AA6631 /* iSquareViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		162206841BE1476B00AA6631 /* iSquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		162206871BE1476B00AA6631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		162206891BE1476B00AA6631 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1622068C1BE1476B00AA6631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1622068E1BE1476B00AA6631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		162206911BE1476B00AA6631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		162206A31BE1476B00AA6631 /* iSquareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSquareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		162206A71BE1476B00AA6631 /* iSquareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSquareUITests.swift; sourceTree = "<group>"; };
 		162206A91BE1476B00AA6631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		162206B91BE14A1500AA6631 /* ImageCropper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCropper.swift; path = ../ImageCropper.swift; sourceTree = "<group>"; };
+		162206BB1BE14EE100AA6631 /* URLCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLCache.swift; sourceTree = "<group>"; };
+		162206BD1BE1525300AA6631 /* iSquareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iSquareViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +101,12 @@
 		162206861BE1476B00AA6631 /* iSquare */ = {
 			isa = PBXGroup;
 			children = (
-				162206871BE1476B00AA6631 /* AppDelegate.swift */,
-				162206891BE1476B00AA6631 /* ViewController.swift */,
 				1622068B1BE1476B00AA6631 /* Main.storyboard */,
+				162206BD1BE1525300AA6631 /* iSquareViewController.swift */,
+				162206B91BE14A1500AA6631 /* ImageCropper.swift */,
+				162206BB1BE14EE100AA6631 /* URLCache.swift */,
 				1622068E1BE1476B00AA6631 /* Assets.xcassets */,
+				162206871BE1476B00AA6631 /* AppDelegate.swift */,
 				162206901BE1476B00AA6631 /* LaunchScreen.storyboard */,
 				162206931BE1476B00AA6631 /* Info.plist */,
 			);
@@ -255,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1622068A1BE1476B00AA6631 /* ViewController.swift in Sources */,
+				162206BC1BE14EE100AA6631 /* URLCache.swift in Sources */,
 				162206881BE1476B00AA6631 /* AppDelegate.swift in Sources */,
+				162206BA1BE14A1500AA6631 /* ImageCropper.swift in Sources */,
+				162206BE1BE1525300AA6631 /* iSquareViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +491,7 @@
 				162206AE1BE1476B00AA6631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		162206AF1BE1476B00AA6631 /* Build configuration list for PBXNativeTarget "iSquareTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +500,7 @@
 				162206B11BE1476B00AA6631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		162206B21BE1476B00AA6631 /* Build configuration list for PBXNativeTarget "iSquareUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +509,7 @@
 				162206B41BE1476B00AA6631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
