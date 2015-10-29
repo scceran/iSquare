@@ -26,6 +26,7 @@ class iSquareViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Adjust the size of the Image, and add on your storyboard
         imageView.frame.size = Size.medium
         imageView.contentMode = .ScaleAspectFill
         imageView.image = squareImage(image!)
