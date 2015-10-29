@@ -43,7 +43,7 @@ func squareImage (image: UIImage) -> UIImage {
     return squaredImage
 }
 
-//Resize Image using UIKit (cheaper but will lead to quality loss)
+//Resize Image using UIKit (this might lead to quality loss)
 private func resizeImage (image: UIImage, targetSize: CGSize) -> UIImage {
     
     let size = image.size
